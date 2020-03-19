@@ -11,7 +11,7 @@ export default ({ data }) => (
           <div className="absolute text-white font-bold top-0 right-0 w-16 h-16 flex justify-center items-center bg-transparent">
             三
           </div>
-          <h1 className="text-5xl font-mono uppercase tracking-wider">
+          <h1 className="text-3xl md:text-5xl font-mono uppercase tracking-wider">
             {data.site.siteMetadata.author}
           </h1>
           <small className="text-lg uppercase">
@@ -33,9 +33,15 @@ export default ({ data }) => (
         <section className="container mx-auto">
           <ul className="flex flex-wrap">
             {data.allMarkdownRemark.edges.map(({ node }) => (
-              <li className="bg-yellow-700 w-1/4 h-64 p-4" key={node.id}>
+              <li
+                className="bg-yellow-700 w-full md:w-1/3 h-64 relative"
+                key={node.id}
+              >
                 <Link to={node.fields.slug}>
-                  <h3>{node.frontmatter.title} </h3>
+                  <img
+                    className="w-full h-64 object-cover"
+                    src={node.frontmatter.hero}
+                  />
                 </Link>
               </li>
             ))}
@@ -82,6 +88,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            hero
           }
           fields {
             slug

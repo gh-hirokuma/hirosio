@@ -1,7 +1,7 @@
 ---
 title: "Work5"
 date: "2017-08-10"
-hero: https://images.unsplash.com/photo-1532264523420-881a47db012d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80
+hero: https://images.unsplash.com/photo-1510083961724-29929f16cd79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 ---
 
 Pandas are really sweet.
