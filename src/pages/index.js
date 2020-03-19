@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import Footer from "../components/footer"
 
 export default ({ data }) => (
   <>
@@ -14,12 +14,15 @@ export default ({ data }) => (
           <h1 className="text-3xl md:text-5xl font-mono uppercase tracking-wider">
             {data.site.siteMetadata.author}
           </h1>
-          <small className="text-lg uppercase">
+          <small className="text-lg uppercase border-b-2 pb-4 border-yellow-600 tracking-wider">
             {data.site.siteMetadata.position}
           </small>
-          <button className="p-2 px-4 border-2 border-white uppercase mt-8 rounded">
+          <Link
+            to={`/contact`}
+            className="p-5 px-12 border border-white uppercase mt-16 rounded"
+          >
             get in touch
-          </button>
+          </Link>
         </div>
         <img
           className="w-full h-screen object-cover"
@@ -34,7 +37,7 @@ export default ({ data }) => (
           <ul className="flex flex-wrap">
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <li
-                className="bg-yellow-700 w-full md:w-1/3 h-64 relative"
+                className="bg-yellow-700 w-full lg:w-1/3 h-64 relative"
                 key={node.id}
               >
                 <Link to={node.fields.slug}>
@@ -49,26 +52,7 @@ export default ({ data }) => (
         </section>
       </section>
     </main>
-    <footer className="w-full h-64 bg-gray-900">
-      <section className="container mx-auto text-white py-8 flex flex-col justify-center items-center">
-        <ul>
-          <li className="inline-block p-8 py-4 uppercase">work</li>
-          <li className="inline-block p-8 py-4 uppercase border-b-2 border-yellow-400">
-            about
-          </li>
-          <li className="inline-block p-8 py-4 uppercase">hello</li>
-        </ul>
-        <section className="mt-4 mb-8">
-          <span className="mr-4">T</span>
-          <span>M</span>
-        </section>
-        <section>
-          <small className="text-xs">
-            © 2020 · {data.site.siteMetadata.author} · All Rights Reserved
-          </small>
-        </section>
-      </section>
-    </footer>
+    <Footer />
   </>
 )
 
