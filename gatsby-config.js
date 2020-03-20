@@ -4,6 +4,9 @@ module.exports = {
     description: `Hirosio Site`,
     author: `Hiroshige.Negishi`,
     position: `Web & Fullstack Engineer`,
+    emailAddress: ``,
+    twitterAccount: ``,
+    githubAccount: ``,
   },
   plugins: [
     `gatsby-transformer-remark`,

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { IoIosPaperPlane, IoIosMenu } from "react-icons/io"
 import Footer from "../components/footer"
 
 export default ({ data }) => (
@@ -8,18 +9,25 @@ export default ({ data }) => (
       <section className="w-full h-screen bg-gray-900 relative">
         <div className="absolute w-full h-screen bg-gray-900 opacity-75"></div>
         <div className="absolute w-full h-screen text-white flex flex-col justify-center items-center">
-          <div className="absolute text-white font-bold top-0 right-0 w-16 h-16 flex justify-center items-center bg-transparent">
-            三
+          <div className="absolute text-white text-2xl font-bold top-0 right-0 w-16 h-16 flex justify-center items-center bg-transparent">
+            <IoIosMenu />
           </div>
-          <h1 className="text-3xl md:text-5xl font-mono uppercase tracking-wider">
-            {data.site.siteMetadata.author}
+          <h1 className="text-3xl md:text-5xl font-mono uppercase tracking-wider mb-4">
+            <span className="text-blue-400">`</span>
+            <span className="text-pink-400">$</span>
+            <span className="text-blue-400">{`\{`}</span>
+            <span className="text-green-300">
+              {data.site.siteMetadata.author}
+            </span>
+            <span className="text-blue-400">{`\}`}</span>
+            <span className="text-blue-400">`</span>
           </h1>
           <small className="text-lg uppercase border-b-2 pb-4 border-yellow-600 tracking-wider">
             {data.site.siteMetadata.position}
           </small>
           <Link
             to={`/contact`}
-            className="p-5 px-12 border border-white uppercase mt-16 rounded"
+            className="p-5 px-12 border border-white hover:border-yellow-600 uppercase mt-16 rounded"
           >
             get in touch
           </Link>
@@ -44,6 +52,7 @@ export default ({ data }) => (
                   <img
                     className="w-full h-64 object-cover"
                     src={node.frontmatter.hero}
+                    alt={node.frontmatter.title}
                   />
                 </Link>
               </li>

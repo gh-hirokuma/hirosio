@@ -1,5 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { IoLogoTwitter, IoLogoGithub, IoMdMail } from "react-icons/io"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -13,22 +14,55 @@ const Footer = () => {
   `)
 
   return (
-    <footer className="w-full h-64 bg-gray-900">
+    <footer className="w-full bg-gray-900">
       <section className="container mx-auto text-white py-8 flex flex-col justify-center items-center">
-        <ul>
-          <li className="inline-block p-8 py-4 uppercase">work</li>
-          <li className="inline-block p-8 py-4 uppercase border-b-2 border-yellow-400">
-            about
+        <ul className="flex flex-col md:flex-row">
+          <li>
+            <Link
+              to={`/work`}
+              className="inline-block p-8 py-4 uppercase text-center"
+            >
+              work
+            </Link>
           </li>
-          <li className="inline-block p-8 py-4 uppercase">hello</li>
-          <li className="inline-block p-8 py-4 uppercase">blog</li>
+          <li>
+            <Link
+              to={`/about`}
+              className="inline-block p-8 py-4 uppercase text-center border-b-2 border-yellow-400"
+            >
+              about
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={`/contact`}
+              className="inline-block p-8 py-4 uppercase text-center"
+            >
+              hello
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={`/blog`}
+              className="inline-block p-8 py-4 uppercase text-center"
+            >
+              blog
+            </Link>
+          </li>
         </ul>
-        <section className="mt-4 mb-8">
-          <span className="mr-4">T</span>
-          <span>M</span>
+        <section className="my-8 flex flex-row">
+          <span className="text-xl py-2 px-4 flex justify-center items-center">
+            <IoMdMail />
+          </span>
+          <span className="text-xl py-2 px-4 flex justify-center items-center">
+            <IoLogoTwitter />
+          </span>
+          <span className="text-xl py-2 px-4 flex justify-center items-center">
+            <IoLogoGithub />
+          </span>
         </section>
         <section>
-          <small className="text-xs">
+          <small className="text-xs tracking-wider">
             © 2020 · {data.site.siteMetadata.author} · All Rights Reserved
           </small>
         </section>
