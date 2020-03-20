@@ -20,10 +20,25 @@ export default ({ data }) => (
       </section>
     </header>
     <main>
-      <section className="flex flex-col justify-center items-center py-16 px-20">
-        <h2 className="uppercase tracking-widest my-8 text-lg md:text-2xl font-semibold">
-          Blog
-        </h2>
+      <section className="flex flex-col justify-center items-center pb-16 px-20 bg-gray-900">
+        <section className="container mx-auto">
+          <ul className="flex flex-wrap">
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <li
+                className="bg-yellow-700 w-full lg:w-1/3 h-64 relative"
+                key={node.id}
+              >
+                <Link to={node.fields.slug}>
+                  <img
+                    className="w-full h-64 object-cover"
+                    src={node.frontmatter.hero}
+                    alt={node.frontmatter.title}
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       </section>
     </main>
     <Footer />
@@ -36,6 +51,26 @@ export const query = graphql`
       siteMetadata {
         author
         position
+      }
+    }
+    allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/posts/" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+            hero
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
       }
     }
   }
