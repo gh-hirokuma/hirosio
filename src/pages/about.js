@@ -6,21 +6,14 @@ import { DiCode } from "react-icons/di"
 import { AiOutlineDatabase } from "react-icons/ai"
 
 import Footer from "../components/footer"
+import Meta from "../components/meta"
+import Header from "../components/header"
 
 export default ({ data }) => (
-  <>
-    <header>
-      <section className="py-10 px-4 md:px-16 bg-gray-900 flex justify-between items-center">
-        <h1 className="text-white text-3xl">
-          <Link to={`/`}>{data.site.siteMetadata.author}</Link>
-        </h1>
-        <button className="text-2xl bg-gray-800 w-16 h-16 text-white flex justify-center items-center">
-          <IoIosMenu />
-        </button>
-      </section>
-    </header>
+  <Meta title={`About`}>
+    <Header />
     <main>
-      <section className="flex flex-col justify-center items-center py-16 px-20">
+      <section className="flex flex-col justify-center items-center py-16 px-0 md:px-20 bg-white">
         <h2 className="uppercase tracking-widest my-8 text-lg md:text-2xl font-semibold">
           about me
         </h2>
@@ -29,6 +22,7 @@ export default ({ data }) => (
             <img
               className="w-full object-cover"
               src={`https://images.unsplash.com/photo-1525373698358-041e3a460346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80`}
+              alt={`My Profile`}
             />
           </div>
           <div className="w-full lg:w-9/12 tracking-wide font-thin mb-16 leading-loose text-gray-600 p-8">
@@ -121,7 +115,7 @@ export default ({ data }) => (
       </section>
     </main>
     <Footer />
-  </>
+  </Meta>
 )
 
 export const query = graphql`

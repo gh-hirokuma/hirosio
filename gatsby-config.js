@@ -4,9 +4,10 @@ module.exports = {
     description: `Hirosio Site`,
     author: `Hiroshige.Negishi`,
     position: `Web & Fullstack Engineer`,
-    emailAddress: ``,
-    twitterAccount: ``,
-    githubAccount: ``,
+    emailAddress: `hirokuma@globhcet.org`,
+    twitterAccount: `gh_hirokuma`,
+    githubAccount: `gh-hirokuma`,
+    githubAccount2: `hirosige`,
   },
   plugins: [
     `gatsby-transformer-remark`,

@@ -8,6 +8,10 @@ const Footer = () => {
       site {
         siteMetadata {
           author
+          emailAddress
+          twitterAccount
+          githubAccount
+          githubAccount2
         }
       }
     }
@@ -21,6 +25,7 @@ const Footer = () => {
             <Link
               to={`/work`}
               className="inline-block p-8 py-4 uppercase text-center"
+              activeClassName="border-b-2 border-yellow-400"
             >
               work
             </Link>
@@ -28,7 +33,8 @@ const Footer = () => {
           <li>
             <Link
               to={`/about`}
-              className="inline-block p-8 py-4 uppercase text-center border-b-2 border-yellow-400"
+              className="inline-block p-8 py-4 uppercase text-center"
+              activeClassName="border-b-2 border-yellow-400"
             >
               about
             </Link>
@@ -37,6 +43,7 @@ const Footer = () => {
             <Link
               to={`/contact`}
               className="inline-block p-8 py-4 uppercase text-center"
+              activeClassName="border-b-2 border-yellow-400"
             >
               hello
             </Link>
@@ -45,21 +52,37 @@ const Footer = () => {
             <Link
               to={`/blog`}
               className="inline-block p-8 py-4 uppercase text-center"
+              activeClassName="border-b-2 border-yellow-400"
             >
               blog
             </Link>
           </li>
         </ul>
         <section className="my-8 flex flex-row">
-          <span className="text-xl py-2 px-4 flex justify-center items-center">
+          <a
+            href={`mailto:${data.site.siteMetadata.emailAddress}?subject=I love you`}
+            className="text-xl py-2 px-4 flex justify-center items-center"
+          >
             <IoMdMail />
-          </span>
-          <span className="text-xl py-2 px-4 flex justify-center items-center">
+          </a>
+          <a
+            href={`https://twitter.com/${data.site.siteMetadata.twitterAccount}`}
+            className="text-xl py-2 px-4 flex justify-center items-center"
+          >
             <IoLogoTwitter />
-          </span>
-          <span className="text-xl py-2 px-4 flex justify-center items-center">
+          </a>
+          <a
+            href={`https://github.com/${data.site.siteMetadata.githubAccount}`}
+            className="text-xl py-2 px-4 flex justify-center items-center"
+          >
             <IoLogoGithub />
-          </span>
+          </a>
+          <a
+            href={`https://github.com/${data.site.siteMetadata.githubAccount2}`}
+            className="text-xl py-2 px-4 flex justify-center items-center"
+          >
+            <IoLogoGithub />
+          </a>
         </section>
         <section>
           <small className="text-xs tracking-wider">
