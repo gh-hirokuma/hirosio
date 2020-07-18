@@ -10,10 +10,13 @@ const Card = ({ node }) => (
         src={node.frontmatter.hero}
         alt={node.frontmatter.title}
       />
-      <section className="w-full bg-white p-4">
+      <section className="w-full bg-white p-4 pb-0">
         <h2 className="text-yellow-700 text-lg mb-2">
           {node.frontmatter.title}
         </h2>
+        <div className={`text-gray-400 text-sm mb-2`}>
+          {node.frontmatter.spanStart} - {node.frontmatter.spanEnd}
+        </div>
         <p className="text-gray-500">{node.frontmatter.description}</p>
       </section>
       <Tags node={node} />

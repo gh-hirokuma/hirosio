@@ -44,6 +44,8 @@ export const query = graphql`
             title
             description
             date(formatString: "DD MMMM, YYYY")
+            spanStart(formatString: "YYYY/MM")
+            spanEnd(formatString: "YYYY/MM")
             hero
             tags
           }
