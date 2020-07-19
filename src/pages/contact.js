@@ -17,12 +17,8 @@ export default ({ data }) => (
           lets work together!
         </h2>
         <p className="tracking-wide font-thin text-sm mb-16 leading-loose text-center text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          nec metus magna. Quisque et dolor dui. Curabitur porta lectus nisi.
-          Maecenas sed scelerisque purus. Morbi elit augue, tincidunt rutrum
-          posuere eu, fermentum a metus. Cras dapibus efficitur nibh non
-          dignissim. Nam pretium arcu et metus tristique, non hendrerit neque
-          dignissim.
+          If you have something to ask or share information, please feel free to
+          contact me below form or via sns account.
         </p>
       </section>
       <section className="bg-gray-200">

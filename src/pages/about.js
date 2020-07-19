@@ -8,6 +8,7 @@ import { AiOutlineDatabase } from "react-icons/ai"
 import Footer from "../components/footer"
 import Meta from "../components/meta"
 import Header from "../components/header"
+import SkillChip from "../components/skill-chip"
 
 export default ({ data }) => (
   <Meta title={`About`}>
@@ -26,30 +27,14 @@ export default ({ data }) => (
             />
           </div>
           <div className="w-full lg:w-9/12 tracking-wide font-thin mb-16 leading-loose text-gray-600 p-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            condimentum at nulla non pellentesque. Nulla consequat in justo nec
-            porta. Sed ac turpis quis quam egestas cursus non sagittis nisi.
-            Donec finibus ligula at metus suscipit congue. Aenean auctor dui
-            sapien, eu volutpat dolor dapibus ut. Sed ultrices laoreet elit at
-            ornare. Vivamus pulvinar, elit sed tristique tincidunt, neque augue
-            tempor ante, nec ultricies urna eros sed libero. Curabitur tellus
-            tortor, cursus et libero nec, rutrum lacinia quam. Sed quis arcu ut
-            mauris pretium consectetur in id lacus. Proin sed risus mi. Nam
-            aliquet arcu non mi mattis, et scelerisque lectus sagittis. Integer
-            ac felis nec quam feugiat bibendum ac nec orci. Etiam consectetur
-            condimentum velit non pulvinar. Nullam pulvinar ligula quis magna
-            fringilla suscipit id ac tellus. Aenean sed nisl non diam mattis
-            volutpat et ac nisi. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Cras cursus ex nunc,
-            pretium aliquam arcu sodales sed. Etiam justo lorem, maximus ut nibh
-            quis, bibendum auctor dolor. In id massa ut tellus laoreet dictum.
-            Aliquam convallis nibh eu odio placerat, a efficitur felis tempor.
-            Duis in placerat odio.
+            I am a fullstack developer, mainly focus on mobile (hybrid) web app
+            and studyholic to improve my development skills every single day.
+            coming soon
           </div>
         </section>
       </section>
       <section className="bg-gray-200">
-        <section className="container mx-auto flex flex-col justify-center items-center py-16 pb-24">
+        <section className="container mx-auto flex flex-col justify-center items-center py-16 pb-8">
           <h2 className="uppercase font-semibold tracking-widest text-lg md:text-2xl mb-8">
             How I can help
           </h2>
@@ -64,10 +49,9 @@ export default ({ data }) => (
                 frontend development
               </h3>
               <p className="p-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                condimentum at nulla non pellentesque. Nulla consequat in justo
-                nec porta. Sed ac turpis quis quam egestas cursus non sagittis
-                nisi.
+                I can handle frontend CSS/HTML/Javascript, SPA so on, writing
+                well-managed source code with high performance. plus, I know
+                some of SEO knowledges to create attractive contents.
               </p>
             </li>
             <li className="w-full md:w-1/3 bg-gray-800 text-white flex flex-col justify-center items-center py-8">
@@ -80,10 +64,9 @@ export default ({ data }) => (
                 backend development
               </h3>
               <p className="p-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                condimentum at nulla non pellentesque. Nulla consequat in justo
-                nec porta. Sed ac turpis quis quam egestas cursus non sagittis
-                nisi.
+                I can handle monolithic application with full web framework, and
+                also can handle API Server such as REST API and GraphQL API with
+                PHP, Ruby, NodeJS, Python, and Golang is the recent one
               </p>
             </li>
             <li className="w-full md:w-1/3 bg-gray-700 text-white flex flex-col justify-center items-center py-8">
@@ -96,13 +79,28 @@ export default ({ data }) => (
                 server side
               </h3>
               <p className="p-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                condimentum at nulla non pellentesque. Nulla consequat in justo
-                nec porta. Sed ac turpis quis quam egestas cursus non sagittis
-                nisi.
+                In case of clould infrastructure, I can handle well such as AWS,
+                GCP and well focus on serverless architecuture for operation
+                free products
               </p>
             </li>
           </ul>
+        </section>
+      </section>
+      <section className="bg-gray-200">
+        <section className="container mx-auto flex flex-col justify-center items-center py-16 pb-8">
+          <h2 className="uppercase font-semibold tracking-widest text-lg md:text-2xl mb-8">
+            Which Skill I Can Handle
+          </h2>
+          <ul className="w-full flex flex-col md:flex-row flex-wrap">
+            {data.site.siteMetadata.skillsets.map((skill) => (
+              <SkillChip {...skill} />
+            ))}
+          </ul>
+        </section>
+      </section>
+      <section className="bg-gray-200">
+        <section className="container mx-auto flex flex-col justify-center items-center py-16 pb-24">
           <div className="mt-16 py-4 border-b-2 border-yellow-600">
             <Link
               to={`/contact`}
@@ -124,6 +122,14 @@ export const query = graphql`
       siteMetadata {
         author
         position
+        skillsets {
+          name
+          desc
+          imgSrc
+          score
+          primaryColor
+          experienced
+        }
       }
     }
   }
