@@ -4,7 +4,6 @@ import Meta from "../components/meta"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Tags from "../components/tags"
-import "./work-layout.css"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -21,8 +20,14 @@ export default ({ data }) => {
         </div>
       </section>
       <section className="container mx-auto p-4">
-        <h1 className="text-white text-3xl my-4">{post.frontmatter.title}</h1>
+        <h1 className="text-white text-3xl my-4 antialiased">
+          {post.frontmatter.title}
+        </h1>
         <Tags node={post} className="p-0 mb-8" />
+        <span className="text-white bg-yellow-600 text-sm py-1 px-2">
+          Span: {post.frontmatter.spanStart.split("-").join("/")} ~{" "}
+          {post.frontmatter.spanEnd.split("-").join("/")}
+        </span>
         <div
           className="work-contents text-white"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -41,6 +46,8 @@ export const query = graphql`
         title
         hero
         tags
+        spanStart
+        spanEnd
       }
     }
   }

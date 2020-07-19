@@ -1,6 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import { IoIosPaperPlane, IoIosMenu } from "react-icons/io"
+import { graphql } from "gatsby"
+import { IoIosPaperPlane } from "react-icons/io"
 import Footer from "../components/footer"
 import Meta from "../components/meta"
 import Header from "../components/header"

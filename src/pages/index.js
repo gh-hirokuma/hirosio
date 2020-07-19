@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { IoIosMenu } from "react-icons/io"
 import Footer from "../components/footer"
 import Meta from "../components/meta"
 import IndexHeader from "../components/index_header"

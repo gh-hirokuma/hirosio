@@ -1,3 +1,100 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.work-contents h2 {
+  @apply text-xl;
+  @apply text-gray-100;
+  @apply antialiased;
+  @apply mt-8;
+  @apply mb-4;
+  @apply uppercase;
+}
+
+.work-contents p {
+  @apply mb-4;
+  @apply leading-loose;
+  @apply antialiased;
+  @apply text-gray-100;
+}
+
+.work-contents a {
+  @apply text-yellow-500;
+  @apply underline;
+}
+
+.work-contents em {
+  @apply border-b-4;
+  @apply border-yellow-500;
+}
+
+.work-contents ul {
+  @apply mt-2;
+  @apply list-disc;
+  @apply list-inside;
+  @apply mb-4;
+  @apply text-gray-100;
+}
+
+.work-contents ul li {
+  @apply py-1;
+  @apply px-2;
+  @apply antialiased;
+}
+
+.work-contents ol {
+  @apply mt-2;
+  @apply mb-4;
+  @apply list-decimal;
+  @apply list-inside;
+  @apply text-gray-100;
+}
+
+.work-contents ol li {
+  @apply py-1;
+  @apply px-2;
+  @apply antialiased;
+}
+
+.work-contents blockquote {
+  @apply bg-gray-800;
+  @apply p-8;
+  @apply mb-4;
+  @apply border-l-4;
+  @apply border-yellow-600;
+  @apply text-gray-400;
+  @apply italic;
+}
+
+.work-contents blockquote p {
+  @apply mb-0;
+  @apply leading-loose;
+  @apply antialiased;
+}
+
+.work-contents table {
+  @apply table-auto;
+  @apply mb-4;
+  @apply text-gray-100;
+}
+
+.work-contents table th {
+  @apply px-4;
+  @apply py-2;
+  @apply antialiased;
+}
+
+.work-contents table td {
+  @apply px-4;
+  @apply py-2;
+  @apply border;
+  @apply antialiased;
+}
+
+.work-contents code {
+  @apply bg-gray-800;
+  @apply p-1;
+  @apply text-sm;
+  @apply border-l-2;
+  @apply border-yellow-500;
+}
