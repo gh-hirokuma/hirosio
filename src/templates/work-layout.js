@@ -25,8 +25,12 @@ export default ({ data }) => {
         </h1>
         <Tags node={post} className="p-0 mb-8" />
         <span className="text-white bg-yellow-600 text-sm py-1 px-2">
-          Span: {post.frontmatter.spanStart.split("-").join("/")} ~{" "}
-          {post.frontmatter.spanEnd.split("-").join("/")}
+          Span:{" "}
+          {post.frontmatter.spanStart &&
+            post.frontmatter.spanStart.split("-").join("/")}{" "}
+          ~{" "}
+          {post.frontmatter.spanEnd &&
+            post.frontmatter.spanEnd.split("-").join("/")}
         </span>
         <div
           className="work-contents text-white"
