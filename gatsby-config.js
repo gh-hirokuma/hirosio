@@ -292,7 +292,7 @@ module.exports = {
       {
         name: `Flutter`,
         desc: `Flutter is Google's UI toolkit for crafting beautiful, natively compiled applications for mobile`,
-        imgSrc: `https://lh3.googleusercontent.com/proxy/hU7MeRIY_JHHaq2T01CcoEY_Xyd_C4o-LZEI2y0-wzlQ2fmTRUT6jby7HGtHE9OurJmQAEgBnax6rDY43bBBagP10onrJHJmawusd71_4RtDVGNXbuyFiNA`,
+        imgSrc: `https://lh3.googleusercontent.com/PDObJVtZ6yfp3QlKTSl9jVKpu2pgN0c2pH1ofp-j0WJP3noyM92PEt3Z-Y57BZhOp-_n`,
         score: 80,
         primaryColor: `#333333`,
         experienced: "1 years",
