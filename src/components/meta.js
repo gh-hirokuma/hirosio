@@ -9,13 +9,13 @@ import React from "react"
 import Helmet from "react-helmet"
 import SEO from "./seo"
 
-const Meta = ({ title, description, children }) => {
+const Meta = ({ title, description, metaImage, children }) => {
   return (
     <>
       <Helmet>
         <body className="bg-gray-900" />
       </Helmet>
-      <SEO title={title} description={description} />
+      <SEO title={title} description={description} metaImage={metaImage} />
       {children}
     </>
   )

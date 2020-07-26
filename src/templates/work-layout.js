@@ -52,6 +52,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
         hero
         tags
         spanStart
