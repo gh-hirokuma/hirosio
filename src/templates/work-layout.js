@@ -7,6 +7,7 @@ import Tags from "../components/tags"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  console.log(post)
   return (
     <Meta
       title={post.frontmatter.title}
