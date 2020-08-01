@@ -40,6 +40,7 @@
   @apply py-1;
   @apply px-2;
   @apply antialiased;
+  @apply leading-loose;
 }
 
 .work-contents ol {
@@ -54,6 +55,7 @@
   @apply py-1;
   @apply px-2;
   @apply antialiased;
+  @apply leading-loose;
 }
 
 .work-contents blockquote {

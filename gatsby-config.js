@@ -36,7 +36,7 @@ module.exports = {
       {
         name: `ReactJS`,
         desc: `React is a JavaScript library for building user interfaces.`,
-        imgSrc: `https://www.yuta-u.com/wp-content/uploads/2017/08/react-1-768x768.jpg`,
+        imgSrc: `https://cdn.auth0.com/blog/illustrations/reactjs.png`,
         score: 100,
         primaryColor: `#282c34`,
         experienced: "5 years",

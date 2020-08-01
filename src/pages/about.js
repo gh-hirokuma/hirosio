@@ -26,9 +26,17 @@ export default ({ data }) => (
             />
           </div>
           <div className="w-full lg:w-9/12 tracking-wide font-thin mb-16 leading-loose text-gray-600 p-8">
-            I am a fullstack developer, mainly focus on mobile (hybrid) web app
-            and studyholic to improve my development skills every single day.
-            coming soon
+            I studied computer science at university, got a basic programming
+            degree, and worked for an outsourcing SES company for 3 years in
+            infrastructure and operations and maintenance technology. During
+            that time, he was driven by the fear that he wouldn't be able to
+            learn any skills if he didn't, so he started to study programming
+            and English hard on his own to get basic and applied skills and then
+            went to Canada for a working holiday. After returning to Japan, he
+            decided to move to Thailand immediately. After returning to Japan,
+            he decided to move to Thailand. He joined a Japanese venture company
+            in Thailand as a start-up team and honed his programming skills as
+            well as management, HR and sales skills.
           </div>
         </section>
       </section>
