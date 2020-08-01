@@ -7,8 +7,13 @@ import Tags from "../components/tags"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  console.log(post)
   return (
-    <Meta>
+    <Meta
+      title={post.frontmatter.title}
+      description={post.frontmatter.description}
+      metaImage={post.frontmatter.hero}
+    >
       <Header />
       <section style={{ height: "40vh" }}>
         <div className="h-full container mx-auto">
@@ -48,6 +53,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
         hero
         tags
         spanStart
