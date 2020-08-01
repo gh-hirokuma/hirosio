@@ -1,6 +1,6 @@
 ---
 title: "Blog Engine App"
-description: "Develop React Native App that manipulate remote hardware device via BLE connection."
+description: "Building your own JAMStack blogging engine as an alternative to Wordpress"
 date: "2020-07-26"
 spanStart: "2019-12"
 hero: https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80

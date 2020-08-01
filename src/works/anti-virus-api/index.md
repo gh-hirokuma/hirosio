@@ -1,6 +1,6 @@
 ---
 title: "Anti-Virus Web API"
-description: "Develop React Native App that manipulate remote hardware device via BLE connection."
+description: "Creation and operation of business automation systems using the Anti-Virus Web API"
 date: "2020-07-26"
 spanStart: "2019-07"
 hero: https://images.unsplash.com/flagged/photo-1560854350-13c0b47a3180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1326&q=80

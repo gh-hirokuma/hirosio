@@ -6,4 +6,4 @@ hero: https://images.unsplash.com/photo-1525033903830-ebcb102dbdab?ixlib=rb-1.2.
 tags: ["React", "Gatsby"]
 ---
 
-Sample
+Coming soon...

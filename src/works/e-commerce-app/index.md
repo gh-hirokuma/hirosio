@@ -1,6 +1,6 @@
 ---
 title: "E-Commerce Web App"
-description: "Develop React Native App that manipulate remote hardware device via BLE connection."
+description: "E-commerce bugfic and new features added"
 date: "2020-07-26"
 spanStart: "2019-03"
 spanEnd: "2019-04"
@@ -10,22 +10,12 @@ tags: ["PHP", "CakePHP", "Docker", "Docker Compose"]
 
 ## skillsets
 
-- Using _JAM Stack_ with _GatsbyJS_
-- Backend ecosystem is _AWS Amplify_, and other _AWS Services_
-- Version Management is _Git_/_Gitlab_.
-- Deploy app to _Netlify_ (first time deploy to AWS Amplify Console)
+- System maintenance and bug fixes using _CakePHP_
+- _Docker_/_DockerCompose_ for efficient development operations and automated environment building
 
 ## description
 
-This is private project. Once after I thought of making personal blog site, came up with _wordpress_ in my mind.  
-But I wanted to try new thing, and I tried _GatsbyJS_ at the moment.
-
-I felt difficulties when I did official tutorial for the first time.  
-but now I love this tool very much, because it doesn't have any boring development such as:
-
-- Heavy backend management like, DB Trunsaction, Server manipulation
-- Writing post is very easy because of text-base editing.
-- Once its complicated but after got well known, its gonna be simple and easy
+Fixing bugs and adding new features to a website that is accessed by about 300,000 users a day
 
 _My mission_ is to design _app architecture_, _cloud infrastructure_, and also build and implement  
 Some of _my responsibility_ is below:
@@ -45,7 +35,7 @@ Some of _my responsibility_ is below:
 
 ## team
 
-`1 developer`
+`3 developers`
 
 ## my position
 
@@ -53,18 +43,17 @@ Some of _my responsibility_ is below:
 
 ## difficulties
 
-1. It takes time because of _one man_ developer
-2. It's relatively new movement of development so it takes time to catch up
+1. Its code is quite messy so it takes time to find bugs and solutions
+2. because of messy code, its app is very slow and low performance
 
 ## solutions
 
-1. Manage myself for time/motivation
-2. Study _GatsbyJS_ and mobile developmeet so hard.
-3. Study _GraphQL_ concept and read a book for it.
+1. Make coding regulations and team rules
+2. Find bottom neck of the system and fix it
 
 ## achievements
 
-`Techniques` `Skill Improvement`
+`Techniques` `Website performance tuning`
 
 ## links
 

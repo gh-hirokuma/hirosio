@@ -1,6 +1,6 @@
 ---
 title: "Affiliate Ads Program Supplier App"
-description: "Develop React Native App that manipulate remote hardware device via BLE connection."
+description: "Maintaining and adding new features to a web app that offers the Affiliate Ads Program"
 date: "2020-07-26"
 spanStart: "2020-03"
 spanEnd: "2020-05"
