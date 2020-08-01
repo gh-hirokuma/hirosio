@@ -2,7 +2,9 @@ import React from "react"
 
 const Tags = ({ node, className }) => (
   <section
-    className={className ? className : "p-4 bg-white flex flex-wrap rounded-b"}
+    className={
+      className ? className : "p-4 bg-white flex flex-row flex-wrap rounded-b"
+    }
   >
     {node.frontmatter.tags &&
       node.frontmatter.tags.map((tag) => (

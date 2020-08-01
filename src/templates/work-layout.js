@@ -28,7 +28,7 @@ export default ({ data }) => {
         <h1 className="text-white text-3xl my-4 antialiased">
           {post.frontmatter.title}
         </h1>
-        <Tags node={post} className="p-0 mb-8" />
+        <Tags node={post} className="p-0 mb-8 w-full flex flex-row flex-wrap" />
         <span className="text-white bg-yellow-600 text-sm py-1 px-2">
           Span:{" "}
           {post.frontmatter.spanStart &&
