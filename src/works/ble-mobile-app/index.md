@@ -31,13 +31,6 @@ Some of _my responsibility_ is below:
 - `INFRASTRUCTURE` Design and build cloud infrastructure
 - `APP STORE` Manage app store contents, application, analytics
 
-## summary of tasks
-
-- `BUGFIX` Minor changes like that, some of text message are grammerly wrong.
-- `BUGFIX` _Pagination_ doesn't work well. once it's built womplicated Javascript, I changed it to use _PHP basic package_ which OSS team tested well.
-- `FEATURE` Add search feature as a new feature.
-- `TUNING` previously, its based on _Xampp_, I replaced it on _Docker_ for fast provisioning.
-
 ## team
 
 `1 developer`

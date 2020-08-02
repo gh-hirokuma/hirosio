@@ -28,13 +28,6 @@ Some of _my responsibility_ is below:
 - `TUNING` Keep an eye on efficiency for the better environment.
 - `INFRASTRUCTURE` Design and build cloud infrastructure
 
-## summary of tasks
-
-- `BUGFIX` Minor changes like that, some of text message are grammerly wrong.
-- `BUGFIX` _Pagination_ doesn't work well. once it's built with complicated Javascript, I changed it to use _PHP basic package_ which OSS team tested well.
-- `FEATURE` Add search feature as a new feature.
-- `TUNING` previously, its based on _Xampp_, I replaced it on _Docker_ for fast provisioning.
-
 ## team
 
 `1 developer` `Trello Base Ticket` `Slack Communication`
