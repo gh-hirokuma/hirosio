@@ -59,38 +59,38 @@ const Footer = () => {
           </li>
         </ul>
         <ul className="w-full grid grid-cols-2 md:hidden">
-          <li className="w-full h-32 flex justify-center items-center shadow-md">
+          <li className="w-full h-32 shadow-md">
             <Link
               to={`/work`}
-              className="w-full uppercase text-lg text-center"
-              activeClassName="border-b-2 border-yellow-400"
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
             >
               work
             </Link>
           </li>
-          <li className="w-full h-32 flex justify-center items-center shadow-md">
+          <li className="w-full h-32 shadow-md">
             <Link
               to={`/about`}
-              className="uppercase text-lg text-center"
-              activeClassName="border-b-2 border-yellow-400"
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
             >
               about
             </Link>
           </li>
-          <li className="w-full h-32 flex justify-center items-center shadow-md">
+          <li className="w-full h-32 shadow-md">
             <Link
               to={`/contact`}
-              className="uppercase text-lg text-center"
-              activeClassName="border-b-2 border-yellow-400"
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
             >
               hello
             </Link>
           </li>
-          <li className="w-full h-32 flex justify-center items-center shadow-md">
+          <li className="w-full h-32 shadow-md">
             <Link
               to={`/blog`}
-              className="uppercase text-lg text-center"
-              activeClassName="border-b-2 border-yellow-400"
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
             >
               blog
             </Link>
