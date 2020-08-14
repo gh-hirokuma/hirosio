@@ -8,6 +8,7 @@ module.exports = {
     twitterAccount: `gh_hirokuma`,
     githubAccount: `gh-hirokuma`,
     githubAccount2: `hirosige`,
+    siteUrl: `https://hiros.org`,
     skillsets: [
       {
         name: `Javascript ES6`,
@@ -316,6 +317,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
