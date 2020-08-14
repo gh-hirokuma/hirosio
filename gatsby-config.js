@@ -26,6 +26,14 @@ module.exports = {
         experienced: "5 years",
       },
       {
+        name: `Typescript`,
+        desc: `TypeScript extends JavaScript by adding types to the language.`,
+        imgSrc: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png`,
+        score: 100,
+        primaryColor: `#282c34`,
+        experienced: "5 years",
+      },
+      {
         name: `ExpressJS`,
         desc: `Fast, unopinionated, minimalist web framework for Node.js`,
         imgSrc: `https://i0.wp.com/www.artit-k.com/wp-content/uploads/2017/07/Cover-Express.js.png?resize=650%2C300`,

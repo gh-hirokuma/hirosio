@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-gray-900">
       <section className="container mx-auto text-white py-8 flex flex-col justify-center items-center">
-        <ul className="flex flex-col md:flex-row">
+        <ul className="hidden md:flex md:flex-row">
           <li>
             <Link
               to={`/work`}
@@ -53,6 +53,44 @@ const Footer = () => {
               to={`/blog`}
               className="inline-block p-8 py-4 uppercase text-center"
               activeClassName="border-b-2 border-yellow-400"
+            >
+              blog
+            </Link>
+          </li>
+        </ul>
+        <ul className="w-full grid grid-cols-2 md:hidden">
+          <li className="w-full h-32 shadow-md">
+            <Link
+              to={`/work`}
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
+            >
+              work
+            </Link>
+          </li>
+          <li className="w-full h-32 shadow-md">
+            <Link
+              to={`/about`}
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
+            >
+              about
+            </Link>
+          </li>
+          <li className="w-full h-32 shadow-md">
+            <Link
+              to={`/contact`}
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
+            >
+              hello
+            </Link>
+          </li>
+          <li className="w-full h-32 shadow-md">
+            <Link
+              to={`/blog`}
+              className="h-32 w-full flex justify-center items-center uppercase text-lg text-center"
+              activeClassName="bg-yellow-900"
             >
               blog
             </Link>
